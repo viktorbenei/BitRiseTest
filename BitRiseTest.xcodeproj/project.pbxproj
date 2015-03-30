@@ -14,6 +14,7 @@
 		27D79C491AC9A86300D2315B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D79C481AC9A86300D2315B /* Images.xcassets */; };
 		27D79C4C1AC9A86300D2315B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D79C4A1AC9A86300D2315B /* LaunchScreen.xib */; };
 		27D79C581AC9A86300D2315B /* BitRiseTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D79C571AC9A86300D2315B /* BitRiseTestTests.m */; };
+		C0E6F3C43F5495EA0A46C799 /* libPods-BitRiseTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ACB620C58F5BEABBA594785 /* libPods-BitRiseTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1ACB620C58F5BEABBA594785 /* libPods-BitRiseTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitRiseTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D79C381AC9A86300D2315B /* BitRiseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitRiseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D79C3C1AC9A86300D2315B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27D79C3D1AC9A86300D2315B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		27D79C511AC9A86300D2315B /* BitRiseTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitRiseTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D79C561AC9A86300D2315B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27D79C571AC9A86300D2315B /* BitRiseTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitRiseTestTests.m; sourceTree = "<group>"; };
+		653DB1B63D9C7B29CC323268 /* Pods-BitRiseTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitRiseTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitRiseTest/Pods-BitRiseTest.debug.xcconfig"; sourceTree = "<group>"; };
+		A5F49CB14153563ACEEE73B5 /* Pods-BitRiseTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitRiseTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitRiseTest/Pods-BitRiseTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E6F3C43F5495EA0A46C799 /* libPods-BitRiseTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				27D79C3A1AC9A86300D2315B /* BitRiseTest */,
 				27D79C541AC9A86300D2315B /* BitRiseTestTests */,
 				27D79C391AC9A86300D2315B /* Products */,
+				E9C870481C8DB3F6DE0205C0 /* Pods */,
+				7339E6131EB62E9CCD50B330 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +126,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7339E6131EB62E9CCD50B330 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1ACB620C58F5BEABBA594785 /* libPods-BitRiseTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9C870481C8DB3F6DE0205C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				653DB1B63D9C7B29CC323268 /* Pods-BitRiseTest.debug.xcconfig */,
+				A5F49CB14153563ACEEE73B5 /* Pods-BitRiseTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27D79C5B1AC9A86300D2315B /* Build configuration list for PBXNativeTarget "BitRiseTest" */;
 			buildPhases = (
+				C46FFB7A710D9CE13EEF3882 /* Check Pods Manifest.lock */,
 				27D79C341AC9A86300D2315B /* Sources */,
 				27D79C351AC9A86300D2315B /* Frameworks */,
 				27D79C361AC9A86300D2315B /* Resources */,
+				C31D1B23FD4145EAEF833DE8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C31D1B23FD4145EAEF833DE8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitRiseTest/Pods-BitRiseTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C46FFB7A710D9CE13EEF3882 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		27D79C341AC9A86300D2315B /* Sources */ = {
@@ -341,6 +400,7 @@
 		};
 		27D79C5C1AC9A86300D2315B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 653DB1B63D9C7B29CC323268 /* Pods-BitRiseTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BitRiseTest/Info.plist;
@@ -351,6 +411,7 @@
 		};
 		27D79C5D1AC9A86300D2315B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F49CB14153563ACEEE73B5 /* Pods-BitRiseTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BitRiseTest/Info.plist;
@@ -412,6 +473,7 @@
 				27D79C5D1AC9A86300D2315B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27D79C5E1AC9A86300D2315B /* Build configuration list for PBXNativeTarget "BitRiseTestTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +482,7 @@
 				27D79C601AC9A86300D2315B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
