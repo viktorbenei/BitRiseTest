@@ -2,7 +2,7 @@
 # platform :ios, '6.0'
 
 target 'BitRiseTest' do
-	pod 'AFNetworking'
+	pod 'AFNetworking', :path => 'AFNetworking'
 end
 
 target 'BitRiseTestTests' do
